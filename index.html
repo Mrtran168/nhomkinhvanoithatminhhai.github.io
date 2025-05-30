@@ -2,142 +2,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nhôm Kính Minh Hải</title>
+  <title>Nhôm Kính Xây Dựng Minh Hải</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color: #333;
-    }header {
-  background: #005bbb;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 26px;
-}
-
-.slogan {
-  font-style: italic;
-  font-size: 14px;
-}
-
-nav {
-  background: #eee;
-  text-align: center;
-  padding: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  margin: 0 10px;
-  color: #005bbb;
-  font-weight: bold;
-}
-
-.slider {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.slider img {
-  flex: 0 0 100%;
-  height: 250px;
-  object-fit: cover;
-  scroll-snap-align: center;
-}
-
-section {
-  background: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 10px;
-}
-
-.gallery img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.contact p {
-  margin: 5px 0;
-}
-
-a.btn {
-  display: inline-block;
-  background: #28a745;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-}
-
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .hero {
+      background: url('hero.jpg') center/cover no-repeat;
+      height: 400px;
+      position: relative;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero h1 {
+      background-color: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+    }
+    .section-title {
+      margin: 2rem 0 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
   </style>
 </head>
-<body><header>
-  <h1>Nhôm Kính Xây Dựng Minh Hải</h1>
-  <div class="slogan">Chất lượng - Uy tín - Giá tốt</div>
-</header><nav>
-  <a href="#gioithieu">Giới thiệu</a>
-  <a href="#sanpham">Sản phẩm</a>
-  <a href="#hinh">Hình ảnh</a>
-  <a href="#lienhe">Liên hệ</a>
-</nav><div class="slider">
-  <img src="img1.jpg" alt="Hình ảnh 1" />
-  <img src="img2.jpg" alt="Hình ảnh 2" />
-  <img src="img3.jpg" alt="Hình ảnh 3" />
-</div><section id="gioithieu">
-  <h2>Giới thiệu</h2>
-  <p>Chúng tôi chuyên thi công cửa nhôm kính, vách kính cường lực, tủ nhôm, kệ sắt, kệ inox, cầu thang inox/sắt, chậu rửa chén inox 304, vòi nước, bồn cầu, lavabo sứ... tại TP.HCM và các vùng lân cận.</p>
-</section><section id="sanpham">
-  <h2>Danh mục sản phẩm</h2>
-  <ul>
-    <li>Cửa nhôm kính, cửa lùa, cửa mở quay</li>
-    <li>Vách kính cường lực, vách ngăn phòng</li>
-    <li>Tủ nhôm kính, tủ bếp nhôm</li>
-    <li>Kệ inox, kệ kiếng, kệ sắt</li>
-    <li>Cầu thang inox, cầu thang sắt</li>
-    <li>Sen tắm, vòi nước inox</li>
-    <li>Lavabo, bồn cầu sứ</li>
-    <li>Chậu rửa chén Inox 304</li>
-  </ul>
-</section><section id="hinh">
-  <h2>Hình ảnh showroom</h2>
-  <div class="gallery">
-    <img src="img4.jpg" alt="Cửa nhôm" />
-    <img src="img5.jpg" alt="Tủ bếp" />
-    <img src="img6.jpg" alt="Vách kính" />
-    <img src="img7.jpg" alt="Chậu rửa" />
-  </div>
-</section><section id="lienhe" class="contact">
-  <h2>Liên hệ</h2>
-  <p>🏠 Địa chỉ: 829 Đường Tỉnh Lộ 10, P. Bình Trị Đông B, Q. Bình Tân, TP.HCM</p>
-  <p>📞 Điện thoại: <a href="tel:0909123456">0909 123 456</a></p>
-  <p>Zalo: <a href="https://zalo.me/0909123456" target="_blank">Zalo Minh Hải</a></p>
-  <a class="btn" href="https://maps.app.goo.gl/xyz123" target="_blank">📍 Xem bản đồ Google Maps</a>
-</section><footer>
-  &copy; 2025 Nhôm kính Minh Hải - Thi công nội thất chất lượng cao.
-</footer></body>
-</html>
+<body>
+  <header>
+    <h1>Nhôm Kính Xây Dựng Minh Hải</h1>
+    <p>Chất lượng - Uy tín - Giá tốt</p>
+  </header>  <section class="hero">
+    <h1>Chào mừng đến với Minh Hải</h1>
+  </section>  <section class="container mt-5">
+    <h2 class="section-title">Dịch vụ và Sản phẩm</h2>
+    <div class="row g-4">
+      <div class="col-md-4 product">
+        <img src="product1.jpg" alt="Cửa nhôm kính">
+        <h5 class="mt-2">Cửa nhôm kính cường lực</h5>
+        <p>Thi công lắp đặt đa dạng mẫu mã, thiết kế hiện đại.</p>
+      </div>
+      <div class="col-md-4 product">
+        <img src="product2.jpg" alt="Tủ nhôm inox">
+        <h5 class="mt-2">Tủ nhôm, inox, nhựa</h5>
+        <p>Bền đẹp, tiện lợi, phù hợp mọi không gian.</p>
+      </div>
+      <div class="col-md-4 product">
+        <img src="product3.jpg" alt="Thiết bị vệ sinh">
+        <h5 class="mt-2">Thiết bị vệ sinh</h5>
+        <p>Bồn cầu, lavabo, sen tắm, vòi nước chất lượng cao.</p>
+      </div>
+    </div>
+  </section>  <section class="container mt-5">
+    <h2 class="section-title">Liên hệ với chúng tôi</h2>
+    <p class="text-center">829 Đường Tỉnh Lộ 10, P. Bình Trị Đông B, Bình Tân, TP.HCM</p>
+    <div class="text-center">
+      <a href="tel:0901234567" class="btn btn-primary m-2">Gọi ngay</a>
+      <a href="https://zalo.me/0901234567" class="btn btn-success m-2">Zalo</a>
+    </div>
+    <div class="text-center mt-3">
