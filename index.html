@@ -3,119 +3,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nhôm Kính & Nội Thất Minh Hải</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #004466;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .hero {
-      background: url('hero.jpg') center/cover no-repeat;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #003344;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      margin-top: 40px;
-    }
-    .product-card img {
-      border-radius: 0.5rem;
-      max-height: 180px;
-      object-fit: cover;
-    }
-    .qr img {
-      max-width: 150px;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
 </head>
-<body>
-  <header>
-    <h1>Nhôm Kính & Nội Thất Minh Hải</h1>
-    <p>Chất lượng tạo nên thương hiệu - Uy tín xây dựng niềm tin</p>
-  </header>  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Minh Hải</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#gioithieu">Giới thiệu</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sanpham">Sản phẩm</a></li>
-          <li class="nav-item"><a class="nav-link" href="#baogia">Báo giá</a></li>
-          <li class="nav-item"><a class="nav-link" href="#lienhe">Liên hệ</a></li>
-        </ul>
-      </div>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-yellow-600 text-white shadow">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Nhôm Kính & Nội Thất Minh Hải</h1>
+      <a href="tel:0975082618" class="bg-white text-yellow-600 px-4 py-2 rounded shadow hover:bg-yellow-100">Gọi Ngay</a>
     </div>
-  </nav>  <div class="hero">
-    Chào mừng đến với Minh Hải
-  </div>  <section id="gioithieu" class="container py-5">
-    <h2 class="text-center mb-4">Giới thiệu</h2>
-    <p>Chúng tôi chuyên thi công và cung cấp các sản phẩm như cửa nhôm kính, tủ nhôm, inox, sắt, nhựa, thang, kệ, vòi nước, sen tắm, chậu rửa, thiết bị vệ sinh... với chất lượng cao và giá cả hợp lý.</p>
-  </section>  <section id="sanpham" class="container py-5">
-    <h2 class="text-center mb-4">Danh mục sản phẩm</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card product-card">
-          <img src="product1.jpg" class="card-img-top" alt="Cửa nhôm kính">
-          <div class="card-body">
-            <h5 class="card-title">Cửa nhôm kính cường lực</h5>
-            <p class="card-text">Thiết kế hiện đại, an toàn, cách âm tốt.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card product-card">
-          <img src="product2.jpg" class="card-img-top" alt="Tủ nhôm">
-          <div class="card-body">
-            <h5 class="card-title">Tủ nhôm đa năng</h5>
-            <p class="card-text">Chống mối mọt, bền đẹp theo thời gian.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card product-card">
-          <img src="product3.jpg" class="card-img-top" alt="Sen tắm">
-          <div class="card-body">
-            <h5 class="card-title">Sen tắm - vòi nước inox</h5>
-            <p class="card-text">Chất liệu inox 304 không gỉ, sử dụng lâu dài.</p>
-          </div>
-        </div>
-      </div>
+  </header>  <!-- Hero section -->  <section class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Giải pháp nội thất và nhôm kính chuyên nghiệp</h2>
+      <p class="text-gray-600">Cửa nhôm kính, tủ bếp, cầu thang, lan can, thiết bị vệ sinh...</p>
     </div>
-  </section>  <section id="baogia" class="container py-5">
-    <h2 class="text-center mb-4">Báo giá</h2>
-    <p class="text-center">Liên hệ trực tiếp để nhận báo giá nhanh chóng và chính xác. Chúng tôi cam kết mức giá cạnh tranh và dịch vụ chu đáo nhất.</p>
-  </section>  <section id="lienhe" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Liên hệ - Gửi yêu cầu</h2>
-      <div class="row text-center">
-        <div class="col-md-6">
-          <p>📍 829 Đường Tỉnh Lộ 10, P. Bình Trị Đông B, Q. Bình Tân, TP.HCM</p>
-          <p>📞 0989 999 999 - Zalo tư vấn nhanh</p>
-        </div>
-        <div class="col-md-6 qr">
-          <p>Quét mã QR để kết nối Zalo:</p>
-          <img src="qr_zalo.png" alt="QR Zalo">
-        </div>
-      </div>
-    </div>
-  </section>  <footer>
-    &copy; 2025 Nhôm Kính & Nội Thất Minh Hải. All rights reserved.
-  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body>
-</html>
+  </section>  <!-- Services -->  <section class="bg-gray-100 py-10">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-semibold text-center mb-6">Dịch Vụ Của Chúng Tôi</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://via.placeholder.com/400x200" alt="Cửa nhôm kính" class="w-full mb-4 rounded">
+          <h4 class="font-bold mb-2">Cửa Nhôm Kính</h4>
