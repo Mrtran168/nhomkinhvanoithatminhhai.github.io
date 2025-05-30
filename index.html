@@ -1,93 +1,157 @@
-<!DOCTYPE html><html lang="vi">
-<head>
+<!DOCTYPE html><html lang="vi"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nhôm Kính & Nội Thất Minh Hải</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-    body {
-      background: linear-gradient(135deg, #f0f2f5, #dbe4ed);
       color: #333;
-      padding: 40px 20px;
-    }
-    header {
-      background-color: #1f3c88;
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-    header h1 {
-      font-size: 28px;
-      font-weight: 700;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .section h2 {
-      font-size: 22px;
-      color: #1f3c88;
-      margin-bottom: 15px;
-    }
-    .section p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 20px;
-    }
-    .gallery img {
-      width: calc(33.333% - 10px);
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    @media (max-width: 768px) {
-      .gallery img {
-        width: 100%;
-      }
-    }
+    }header {
+  background-color: #003366;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #003366;
+  font-size: 1.4rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+}
+
+.slider img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-links {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-links a {
+  background-color: #003366;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
   </style>
-</head>
-<body>
+</head><body>
   <header>
     <h1>Chuyên thi công – cung cấp nhôm kính, nội thất cao cấp tại TP.HCM</h1>
   </header>  <div class="container">
-    <div class="section">
+    <section>
       <h2>Giới thiệu</h2>
       <p>Chúng tôi là đơn vị chuyên cung cấp và thi công các sản phẩm nhôm kính, nội thất cao cấp tại TP.HCM với nhiều năm kinh nghiệm và uy tín.</p>
-    </div><div class="section">
+    </section><section>
   <h2>Sản phẩm – Dịch vụ</h2>
   <p>Gồm cửa nhôm kính, tủ nhôm, tủ inox, kệ kiếng, vòi sen, chậu rửa chén, thiết bị vệ sinh cao cấp và nhiều sản phẩm khác.</p>
-</div>
+</section>
 
-<div class="section">
+<section>
   <h2>Hình ảnh thực tế showroom</h2>
-  <div class="gallery">
-    <img src="hinh1.jpg" alt="Showroom 1">
-    <img src="hinh2.jpg" alt="Showroom 2">
-    <img src="hinh3.jpg" alt="Showroom 3">
+  <div class="slider">
+    <img src="showroom1.jpg" alt="Showroom Nhôm Kính Minh Hải 1">
+    <img src="showroom2.jpg" alt="Showroom Nhôm Kính Minh Hải 2">
+    <img src="showroom3.jpg" alt="Showroom Nhôm Kính Minh Hải 3">
   </div>
-</div>
+</section>
 
+<section>
+  <h2>Bảng báo giá</h2>
+  <table>
+    <tr><th>Sản phẩm</th><th>Mô tả</th><th>Giá tham khảo</th></tr>
+    <tr><td>Cửa nhôm kính</td><td>Chất liệu nhôm Xingfa, kính cường lực</td><td>1.800.000đ/m²</td></tr>
+    <tr><td>Tủ inox</td><td>Inox 304 cao cấp</td><td>2.000.000đ/cái</td></tr>
+    <tr><td>Chậu rửa chén</td><td>Inox 304, chống gỉ</td><td>1.200.000đ/cái</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Liên hệ – Gửi yêu cầu</h2>
+  <form action="https://formspree.io/f/maylnnnn" method="POST">
+    <input type="text" name="name" placeholder="Họ tên" required>
+    <input type="email" name="email" placeholder="Email hoặc SĐT" required>
+    <textarea name="message" placeholder="Nội dung yêu cầu" rows="4" required></textarea>
+    <button type="submit">Gửi yêu cầu</button>
+  </form>
+</section>
+
+  </div>  <div class="contact-links">
+    <a href="tel:0975082618">Gọi ngay</a>
+    <a href="https://zalo.me/0975082618" target="_blank">Zalo</a>
+    <a href="https://maps.app.goo.gl/xyz" target="_blank">Chỉ đường</a>
   </div>
-</body>
-</html>
+</body></html>
