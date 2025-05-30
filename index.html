@@ -47,4 +47,130 @@
     }
     .container {
       padding: 40px 20px;
-      max
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #0a3d62;
+      padding-left: 10px;
+      color: #0a3d62;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .contact {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+    footer {
+      text-align: center;
+      background: #3c6382;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .cta {
+      background: #82ccdd;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    .cta a {
+      background: #0a3d62;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nhôm Kính & Nội Thất Minh Hải</h1>
+    <p>Chất lượng – Uy tín – Giá tốt tại TP.HCM</p>
+  </header>
+  <nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#sanpham">Sản phẩm</a>
+    <a href="#baogia">Báo giá</a>
+    <a href="#lienhe">Liên hệ</a>
+  </nav>
+  <div class="hero">Showroom Nhôm Kính Minh Hải</div>
+  <div class="container">
+    <section id="gioithieu">
+      <h2 class="section-title">Giới thiệu</h2>
+      <p>Chúng tôi chuyên thi công & lắp đặt các sản phẩm nội thất nhôm kính, tủ bếp, kệ, cửa kính, thang inox… với nhiều năm kinh nghiệm và đội ngũ kỹ thuật tận tâm.</p>
+    </section>
+    <section id="sanpham">
+      <h2 class="section-title">Sản phẩm tiêu biểu</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://via.placeholder.com/400x200?text=Cua+Nhom+Kinh" alt="Cửa nhôm kính">
+          <div class="product-info">
+            <h3>Cửa nhôm kính cường lực</h3>
+            <p>Bền đẹp, an toàn, thẩm mỹ cao.</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/400x200?text=Tu+Bep+Nhom" alt="Tủ bếp nhôm">
+          <div class="product-info">
+            <h3>Tủ bếp nhôm kính</h3>
+            <p>Chống mối mọt, dễ lau chùi, thiết kế đa dạng.</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/400x200?text=Bon+Rua+Inox" alt="Chậu rửa inox">
+          <div class="product-info">
+            <h3>Chậu rửa chén inox 304</h3>
+            <p>Chất liệu cao cấp, không gỉ, sử dụng lâu dài.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="baogia">
+      <h2 class="section-title">Báo giá & Liên hệ nhanh</h2>
+      <div class="cta">
+        <p>Liên hệ ngay để nhận báo giá chi tiết và ưu đãi tốt nhất!</p>
+        <a href="tel:0975082618">Gọi ngay: 0975 082 618</a>
+        <br /><br />
+        <a href="https://zalo.me/0975082618" target="_blank">Nhắn Zalo</a>
+      </div>
+    </section>
+    <section id="lienhe">
+      <h2 class="section-title">Liên hệ</h2>
+      <div class="contact">
+        <p><strong>Địa chỉ:</strong> 829 Tỉnh Lộ 10, P. Bình Trị Đông B, Q. Bình Tân, TP.HCM</p>
+        <p><strong>SĐT:</strong> <a href="tel:0975082618">0975 082 618</a></p>
+        <p><strong>Zalo:</strong> <a href="https://zalo.me/0975082618">zalo.me/0975082618</a></p>
+        <p><strong>Bản đồ:</strong> <a href="https://maps.app.goo.gl/fU1yzTMRP3PhrU7bA" target="_blank">Xem trên Google Maps</a></p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Nhôm Kính & Nội Thất Minh Hải | Thiết kế bởi ChatGPT
+  </footer>
+</body>
+</html>
