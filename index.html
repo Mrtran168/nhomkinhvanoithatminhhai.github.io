@@ -1,83 +1,45 @@
 <!DOCTYPE html><html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nhôm Kính & Nội Thất Minh Hải</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
       color: #333;
     }
     header {
-      background-color: #006699;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
       background-color: #004466;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px;
-    }
-    nav a {
       color: white;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 30px 20px;
+      text-align: center;
     }
     .hero {
       background: url('hero.jpg') center/cover no-repeat;
-      height: 300px;
+      height: 400px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 2em;
+      font-size: 2.5rem;
       font-weight: bold;
     }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .product {
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .product img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .contact {
-      background-color: #e0f0ff;
-      text-align: center;
-      padding: 20px;
-    }
     footer {
-      background-color: #004466;
+      background-color: #003344;
       color: white;
+      padding: 15px;
       text-align: center;
-      padding: 10px;
+      margin-top: 40px;
+    }
+    .product-card img {
+      border-radius: 0.5rem;
+      max-height: 180px;
+      object-fit: cover;
     }
     .qr img {
-      max-width: 200px;
+      max-width: 150px;
     }
   </style>
 </head>
@@ -85,36 +47,75 @@
   <header>
     <h1>Nhôm Kính & Nội Thất Minh Hải</h1>
     <p>Chất lượng tạo nên thương hiệu - Uy tín xây dựng niềm tin</p>
-  </header>
-  <nav>
-    <a href="#gioithieu">Giới thiệu</a>
-    <a href="#sanpham">Sản phẩm</a>
-    <a href="#baogia">Báo giá</a>
-    <a href="#lienhe">Liên hệ</a>
-  </nav>
-  <div class="hero">
+  </header>  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Minh Hải</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#gioithieu">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sanpham">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="#baogia">Báo giá</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lienhe">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <div class="hero">
     Chào mừng đến với Minh Hải
-  </div>
-  <section id="gioithieu" class="section">
-    <h2>Giới thiệu</h2>
+  </div>  <section id="gioithieu" class="container py-5">
+    <h2 class="text-center mb-4">Giới thiệu</h2>
     <p>Chúng tôi chuyên thi công và cung cấp các sản phẩm như cửa nhôm kính, tủ nhôm, inox, sắt, nhựa, thang, kệ, vòi nước, sen tắm, chậu rửa, thiết bị vệ sinh... với chất lượng cao và giá cả hợp lý.</p>
-  </section>
-  <section id="sanpham" class="section">
-    <h2>Danh mục sản phẩm</h2>
-    <div class="products">
-      <div class="product">
-        <img src="product1.jpg" alt="Cửa nhôm kính">
-        <h3>Cửa nhôm kính cường lực</h3>
-        <p>Thiết kế hiện đại, an toàn, cách âm tốt</p>
+  </section>  <section id="sanpham" class="container py-5">
+    <h2 class="text-center mb-4">Danh mục sản phẩm</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="product1.jpg" class="card-img-top" alt="Cửa nhôm kính">
+          <div class="card-body">
+            <h5 class="card-title">Cửa nhôm kính cường lực</h5>
+            <p class="card-text">Thiết kế hiện đại, an toàn, cách âm tốt.</p>
+          </div>
+        </div>
       </div>
-      <div class="product">
-        <img src="product2.jpg" alt="Tủ nhôm">
-        <h3>Tủ nhôm đa năng</h3>
-        <p>Chống mối mọt, bền đẹp theo thời gian</p>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="product2.jpg" class="card-img-top" alt="Tủ nhôm">
+          <div class="card-body">
+            <h5 class="card-title">Tủ nhôm đa năng</h5>
+            <p class="card-text">Chống mối mọt, bền đẹp theo thời gian.</p>
+          </div>
+        </div>
       </div>
-      <div class="product">
-        <img src="product3.jpg" alt="Vòi nước inox">
-        <h3>Sen tắm - vòi nước inox</h3>
-        <p>Chất liệu inox 304 không gỉ, sử dụng lâu dài</p>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="product3.jpg" class="card-img-top" alt="Sen tắm">
+          <div class="card-body">
+            <h5 class="card-title">Sen tắm - vòi nước inox</h5>
+            <p class="card-text">Chất liệu inox 304 không gỉ, sử dụng lâu dài.</p>
+          </div>
+        </div>
       </div>
-    </div
+    </div>
+  </section>  <section id="baogia" class="container py-5">
+    <h2 class="text-center mb-4">Báo giá</h2>
+    <p class="text-center">Liên hệ trực tiếp để nhận báo giá nhanh chóng và chính xác. Chúng tôi cam kết mức giá cạnh tranh và dịch vụ chu đáo nhất.</p>
+  </section>  <section id="lienhe" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Liên hệ - Gửi yêu cầu</h2>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <p>📍 829 Đường Tỉnh Lộ 10, P. Bình Trị Đông B, Q. Bình Tân, TP.HCM</p>
+          <p>📞 0989 999 999 - Zalo tư vấn nhanh</p>
+        </div>
+        <div class="col-md-6 qr">
+          <p>Quét mã QR để kết nối Zalo:</p>
+          <img src="qr_zalo.png" alt="QR Zalo">
+        </div>
+      </div>
+    </div>
+  </section>  <footer>
+    &copy; 2025 Nhôm Kính & Nội Thất Minh Hải. All rights reserved.
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
