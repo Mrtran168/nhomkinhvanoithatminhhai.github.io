@@ -1,105 +1,165 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
+<!DOCTYPE html><html lang="vi"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nhôm Kính & Nội Thất Minh Hải</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f5f5f5;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #f6f8fa;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #1a73e8;
-      color: white;
-      padding: 20px 40px;
+      background: #004080;
+      color: #fff;
+      padding: 30px 20px;
       text-align: center;
-      font-size: 24px;
-      font-weight: 700;
+    }
+    header h1 {
+      font-size: 2.5rem;
     }
     nav {
-      background: #fff;
-      padding: 10px 40px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav a {
-      margin-right: 20px;
-      color: #1a73e8;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?interior,glass') center/cover no-repeat;
-      height: 400px;
+      background: #0066cc;
       display: flex;
       justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 36px;
-      font-weight: 700;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      flex-wrap: wrap;
     }
-    .section {
-      padding: 40px;
+    nav a {
+      color: white;
+      padding: 12px 18px;
+      display: block;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      background-color: #004080;
+    }
+    .container {
+      padding: 20px;
       max-width: 1200px;
       margin: auto;
     }
-    .section h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #1a73e8;
+    section {
+      margin-bottom: 30px;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+    h2 {
+      color: #004080;
+      margin-bottom: 10px;
     }
     .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
     footer {
-      background-color: #1a73e8;
+      background: #004080;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
   </style>
-</head>
-<body>
-  <header>Nhôm Kính & Nội Thất Minh Hải</header>
-  <nav>
-    <a href="#">Trang chủ</a>
-    <a href="#">Giới thiệu</a>
-    <a href="#">Sản phẩm</a>
-    <a href="#">Báo giá</a>
-    <a href="#">Thư viện ảnh</a>
-    <a href="#">Liên hệ</a>
-  </nav>
-  <div class="hero">
-    Chuyên Thiết Kế & Thi Công Nội Thất - Nhôm Kính Cao Cấp
+</head><body>
+  <header>
+    <h1>Nhôm Kính & Nội Thất Minh Hải</h1>
+  </header>  <nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#about">Giới thiệu</a>
+    <a href="#services">Dịch vụ</a>
+    <a href="#products">Sản phẩm</a>
+    <a href="#pricing">Báo giá</a>
+    <a href="#gallery">Thư viện ảnh</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Liên hệ</a>
+    <a href="#zalo">Zalo</a>
+    <a href="#qr">Mã QR</a>
+    <a href="#request">Gửi yêu cầu</a>
+    <a href="#map">Bản đồ</a>
+  </nav>  <div class="container">
+    <section id="home">
+      <h2>Trang chủ</h2>
+      <p>Chào mừng bạn đến với Nhôm Kính & Nội Thất Minh Hải – Chuyên thi công các hạng mục nhôm kính, cửa kính, nội thất cao cấp tại TP.HCM.</p>
+    </section><section id="about">
+  <h2>Giới thiệu</h2>
+  <p>Chúng tôi có nhiều năm kinh nghiệm trong lĩnh vực nhôm kính, cam kết thi công chất lượng, uy tín, đúng tiến độ và giá cả hợp lý.</p>
+</section>
+
+<section id="services">
+  <h2>Dịch vụ</h2>
+  <ul>
+    <li>Cửa nhôm kính cường lực</li>
+    <li>Tủ bếp nhôm, inox, nhựa</li>
+    <li>Kệ kính, kệ inox, thang sắt</li>
+    <li>Vòi sen, thiết bị vệ sinh</li>
+  </ul>
+</section>
+
+<section id="products">
+  <h2>Sản phẩm</h2>
+  <p>Danh mục sản phẩm đa dạng phù hợp mọi nhu cầu khách hàng. Gồm các loại cửa, tủ, kệ, lavabo, bồn cầu, vòi rửa, sen tắm...</p>
+</section>
+
+<section id="pricing">
+  <h2>Bảng báo giá</h2>
+  <p>Giá cả hợp lý, cạnh tranh theo từng loại sản phẩm và diện tích thi công.</p>
+</section>
+
+<section id="gallery">
+  <h2>Thư viện ảnh</h2>
+  <div class="gallery">
+    <img src="images/showroom1.jpg" alt="Hình ảnh showroom 1">
+    <img src="images/showroom2.jpg" alt="Hình ảnh showroom 2">
+    <img src="images/cua-nhom.jpg" alt="Cửa nhôm kính cường lực">
   </div>
-  <section class="section">
-    <h2>Hình ảnh thực tế</h2>
-    <div class="gallery">
-      <img src="https://source.unsplash.com/600x400/?glass,interior" alt="Showroom 1">
-      <img src="https://source.unsplash.com/601x400/?kitchen,glass" alt="Showroom 2">
-      <img src="https://source.unsplash.com/602x400/?bathroom,aluminum" alt="Showroom 3">
-    </div>
-  </section>
-  <section class="section">
-    <h2>Thông tin liên hệ</h2>
-    <p><strong>Địa chỉ:</strong> 829 Đường Tỉnh Lộ 10, P. Bình Trị Đông B, Q. Bình Tân, TP.HCM</p>
-    <p><strong>Điện thoại:</strong> <a href="tel:0975082618">0975082618</a></p>
-    <p><strong>Zalo:</strong> <a href="https://zalo.me/0975082618" target="_blank">Liên hệ Zalo</a></p>
-  </section>
-  <footer>
-    &copy; 2025 Nhôm Kính & Nội Thất Minh Hải. All rights reserved.
+</section>
+
+<section id="video">
+  <h2>Video giới thiệu</h2>
+  <video width="100%" controls>
+    <source src="video/gioithieu.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+</section>
+
+<section id="contact">
+  <h2>Liên hệ</h2>
+  <p>SĐT: <strong>0975082618</strong></p>
+  <p>Địa chỉ: 829 Tỉnh Lộ 10, Phường Bình Trị Đông B, Quận Bình Tân, TP.HCM</p>
+</section>
+
+<section id="zalo">
+  <h2>Liên hệ qua Zalo</h2>
+  <p>Quét mã QR hoặc bấm nút dưới để kết nối Zalo:</p>
+  <img src="images/qr-zalo.png" alt="QR Zalo" width="180">
+</section>
+
+<section id="qr">
+  <h2>Mã QR Website</h2>
+  <img src="images/qr-web.png" alt="QR dẫn đến website" width="180">
+</section>
+
+<section id="request">
+  <h2>Gửi yêu cầu</h2>
+  <form>
+    <input type="text" placeholder="Tên của bạn" required><br>
+    <input type="tel" placeholder="Số điện thoại" required><br>
+    <textarea placeholder="Yêu cầu của bạn" required></textarea><br>
+    <button type="submit">Gửi</button>
+  </form>
+</section>
+
+<section id="map">
+  <h2>Bản đồ</h2>
+  <iframe src="https://www.google.com/maps?q=829+Tỉnh+Lộ+10,+Bình+Trị+Đông+B,+Bình+Tân,+TP.HCM&output=embed" width="100%" height="300" style="border:0;"></iframe>
+</section>
+
+  </div>  <footer>
+    <p>&copy; 2025 Nhôm Kính & Nội Thất Minh Hải. All rights reserved.</p>
   </footer>
-</body>
-</html>
+</body></html>
