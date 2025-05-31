@@ -1,139 +1,123 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!DOCTYPE html><html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nhôm Kính & Nội Thất Minh Hải</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
+    }
+    body {
+      background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(to right, #004e92, #000428);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+      background-color: #ffffff;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
+      font-size: 2rem;
+      color: #0077b6;
     }
     nav {
-      background: #000428;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      flex-wrap: wrap;
+      margin-top: 1rem;
     }
     nav a {
-      color: white;
-      margin: 8px 15px;
+      margin-right: 1.5rem;
+      color: #0077b6;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
+    .hero {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
     }
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .section-title {
+    .hero h2 {
       font-size: 2rem;
-      margin-bottom: 20px;
-      color: #004e92;
+      margin-bottom: 1rem;
+      color: #005f73;
+    }
+    .section {
+      padding: 2rem;
+      background-color: #ffffff;
+      margin: 1rem auto;
+      max-width: 1200px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .section h3 {
+      color: #0077b6;
+      margin-bottom: 1rem;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
     }
     .gallery img {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
     footer {
-      background: #000428;
+      background-color: #0077b6;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 1.5rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Nhôm Kính & Nội Thất Minh Hải</h1>
-    <p>Thi công - thiết kế nội thất chuyên nghiệp tại TP.HCM</p>
-  </header>
-
-  <nav>
-    <a href="#gioithieu">Giới thiệu</a>
-    <a href="#sanpham">Danh mục sản phẩm</a>
-    <a href="#baogia">Báo giá</a>
-    <a href="#thu-vien">Thư viện ảnh</a>
-    <a href="#lienhe">Liên hệ</a>
-  </nav>
-
-  <section id="gioithieu">
-    <h2 class="section-title">Giới thiệu</h2>
-    <p>Chúng tôi chuyên thi công và lắp đặt cửa nhôm kính, vách ngăn, tủ, kệ inox, thiết bị vệ sinh cao cấp và các sản phẩm nội thất với chất lượng vượt trội, giá cả hợp lý.</p>
-  </section>
-
-  <section id="sanpham">
-    <h2 class="section-title">Danh mục sản phẩm</h2>
+    <nav>
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#bao-gia">Báo giá</a>
+      <a href="#thu-vien">Thư viện</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+  </header>  <section class="hero">
+    <h2>Chào mừng bạn đến với Nhôm Kính & Nội Thất Minh Hải</h2>
+    <p>Chuyên cung cấp và thi công các sản phẩm nhôm kính, nội thất inox, sắt, nhựa với chất lượng cao và giá cả hợp lý.</p>
+  </section>  <section class="section" id="gioi-thieu">
+    <h3>Giới thiệu</h3>
+    <p>Chúng tôi có nhiều năm kinh nghiệm trong lĩnh vực nhôm kính và nội thất, phục vụ hàng ngàn khách hàng tại TP.HCM và khu vực lân cận.</p>
+  </section>  <section class="section" id="san-pham">
+    <h3>Danh mục sản phẩm</h3>
     <ul>
       <li>Cửa nhôm kính cường lực</li>
-      <li>Tủ nhôm, inox, sắt, nhựa</li>
-      <li>Kệ inox, kệ kính</li>
-      <li>Thang inox, nhôm, sắt</li>
-      <li>Vòi nước, sen tắm inox</li>
-      <li>Chậu rửa chén inox 304</li>
-      <li>Bồn cầu, lavabo sứ</li>
+      <li>Tủ nhôm, tủ sắt, inox</li>
+      <li>Kệ kiếng, kệ inox</li>
+      <li>Thang nhôm, thang inox</li>
+      <li>Thiết bị vệ sinh: sen vòi, lavabo, chậu rửa 304</li>
     </ul>
-  </section>
-
-  <section id="baogia">
-    <h2 class="section-title">Báo giá</h2>
-    <p>Liên hệ để nhận báo giá chi tiết và ưu đãi đặc biệt dành cho khách hàng tại TP.HCM.</p>
-  </section>
-
-  <section id="thu-vien">
-    <h2 class="section-title">Thư viện ảnh</h2>
+  </section>  <section class="section" id="bao-gia">
+    <h3>Báo giá</h3>
+    <p>Liên hệ trực tiếp qua số <strong>0975 082 168</strong> hoặc Zalo để nhận bảng giá mới nhất và tư vấn miễn phí.</p>
+  </section>  <section class="section" id="thu-vien">
+    <h3>Thư viện ảnh</h3>
     <div class="gallery">
-      <img src="images/showroom1.jpg" alt="Showroom 1">
-      <img src="images/showroom2.jpg" alt="Showroom 2">
-      <img src="images/sanpham1.jpg" alt="Sản phẩm 1">
-      <img src="images/sanpham2.jpg" alt="Sản phẩm 2">
+      <img src="anh1.jpg" alt="Sản phẩm 1">
+      <img src="anh2.jpg" alt="Sản phẩm 2">
+      <img src="anh3.jpg" alt="Sản phẩm 3">
     </div>
-  </section>
-
-  <section id="lienhe">
-    <h2 class="section-title">Liên hệ</h2>
-    <p>📞 Số điện thoại: <strong>0975 082 168</strong></p>
-    <p>📍 Địa chỉ: 829 Tỉnh Lộ 10, P. Bình Trị Đông B, Q. Bình Tân, TP.HCM</p>
-    <p>💬 Zalo: <a href="https://zalo.me/0975082168" target="_blank">Nhắn Zalo</a></p>
-    <p>📍 Google Maps: <a href="https://maps.google.com/?q=829+Tỉnh+Lộ+10,+Bình+Trị+Đông+B,+Bình+Tân,+TP.HCM" target="_blank">Xem bản đồ</a></p>
-  </section>
-
-  <footer>
+  </section>  <section class="section" id="lien-he">
+    <h3>Liên hệ</h3>
+    <p><strong>Địa chỉ:</strong> 829 Đường Tỉnh Lộ 10, P. Bình Trị Đông B, Q. Bình Tân, TP.HCM</p>
+    <p><strong>Điện thoại/Zalo:</strong> 0975 082 168</p>
+    <p><strong>Email:</strong> canhlocphat66@gmail.com</p>
+    <p><a href="https://zalo.me/0975082168">Liên hệ Zalo</a> | <a href="https://maps.app.goo.gl/xyzabc">Xem bản đồ</a></p>
+  </section>  <footer>
     <p>&copy; 2025 Nhôm Kính & Nội Thất Minh Hải. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
-
-Mình đã tích hợp đầy đủ nội dung với tiêu đề “Nhôm Kính & Nội Thất Minh Hải”, giao diện đẹp, font chữ cao cấp, màu nền sang trọng, và có cả thư viện ảnh showroom thực tế.
-
-Bạn có thể xem lại và yêu cầu chỉnh sửa thêm nếu cần nhé. Khi bạn đã hài lòng, mình sẽ hướng dẫn cách cập nhật nội dung và hình ảnh sau này.
-
